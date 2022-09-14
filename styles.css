@@ -3,3 +3,59 @@
 ::after {
   box-sizing: border-box;
 }
+.main {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.heading {
+  width: 100%;
+  font-size: 1.3rem;
+  color: white;
+  letter-spacing: 0.2em;
+  background-color: black;
+}
+.container {
+  margin: 0 auto;
+  width: 70%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 50%;
+  background-color: white;
+  padding: 1em;
+  box-sizing: content-box;
+}
+.books_container {
+  display: grid;
+  margin-top: 2em;
+}
+.card {
+  background-color: rgb(0, 0, 0, 0.4);
+  max-width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.card:hover {
+  scale: 1.1;
+  color: black;
+}
+.card:active {
+  scale: 1;
+}
