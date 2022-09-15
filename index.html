@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" deter></script>
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,9 +23,28 @@
       </div>
     </div>
     <div class="books_container container">
-      <div class="card">
+      <div class="card" id="add_btn">
         <p>+</p>
       </div>
     </div>
+    <dialog id="modal">
+      <form action="#" method="post">
+        <ul>
+          <li>
+            <label for="book_name">Name of the Book</label>
+            <input type="text" id="book" />
+          </li>
+          <li>
+            <label for="author_name">Name of the author</label>
+            <input type="text" id="author" />
+          </li>
+          <li>
+            <label for="page_number">Number of Pages</label>
+            <input type="number" id="page_no." />
+          </li>
+        </ul>
+      </form>
+      <button class="close_btn" id="close_btn">Add</button>
+    </dialog>
   </body>
 </html>
