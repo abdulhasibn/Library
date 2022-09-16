@@ -96,13 +96,23 @@ li {
   background-color: black;
   color: white;
 }
-.x {
-  margin-top: 0.5em;
-  font-size: 1.3rem;
-  text-align: end;
-  border-radius: 50%;
+.x_con {
   display: flex;
   justify-content: flex-end;
+}
+.x {
+  width: 30px;
+  margin-top: 0.5em;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  cursor: pointer;
 }
 #modal ul {
   padding: 0;
