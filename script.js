@@ -10,10 +10,19 @@ function addBookToLibrary() {
   addNew.addEventListener("click", () => {
     const modal = document.getElementById("modal");
     modal.showModal();
-    const closeBtn = document.getElementById("close_btn");
+    const addBtn = document.getElementById("close_btn");
+    addBtn.addEventListener("click", () => {
+      const book = document.getElementById("book").value;
+      const author = document.getElementById("author").value;
+      const pageNumber = document.getElementById("page_no.").value;
+      myLibrary.push(new Book(book, author, pageNumber));
+      modal.close();
+    });
+    const closeBtn = document.getElementById("x");
     closeBtn.addEventListener("click", () => {
       modal.close();
     });
   });
 }
 addBookToLibrary();
+console.log(myLibrary);
