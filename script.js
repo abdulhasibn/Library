@@ -15,7 +15,8 @@ function addBookToLibrary() {
       const book = document.getElementById("book").value;
       const author = document.getElementById("author").value;
       const pageNumber = document.getElementById("page_no.").value;
-      myLibrary.push(new Book(book, author, pageNumber));
+      const read = document.getElementById("read_status").value;
+      myLibrary.push(new Book(book, author, pageNumber, read));
       modal.close();
     });
     const closeBtn = document.getElementById("x");

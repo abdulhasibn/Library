@@ -77,8 +77,14 @@ li {
   font-family: "Poppins", sans-serif;
 }
 #add_btn {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  width: 10vw;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
 }
 #add_btn:hover {
   scale: 1.1;
