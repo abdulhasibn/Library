@@ -32,11 +32,11 @@ li {
   align-items: center;
 }
 .logo {
-  height: 50px;
+  height: 30px;
   width: auto;
   border-radius: 50%;
   background-color: white;
-  padding: 1em;
+  padding: 0.6em;
   box-sizing: content-box;
 }
 .books_container {
@@ -77,12 +77,13 @@ li {
   font-family: "Poppins", sans-serif;
 }
 #add_btn {
-  font-size: 1.5rem;
+  font-size: 1.4vmax;
   cursor: pointer;
   width: 10vw;
-  margin: 0 auto;
+  margin: 1em auto 0 auto;
   text-align: center;
   border-radius: 20px;
+  padding: 0.5em 0.7;
   background-color: black;
   color: white;
 }
