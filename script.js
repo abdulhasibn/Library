@@ -21,7 +21,13 @@ function displayBook() {
   let bookName = document.createElement("p");
   let authorName = document.createElement("p");
   let numberOfPages = document.createElement("p");
+  let readContainer = document.createElement("div");
+  readContainer.className = "read_container";
   let readStatus = document.createElement("p");
+  readContainer.appendChild(readStatus);
+  let readToggle = document.createElement("input");
+  readToggle.type = "checkbox";
+  readContainer.appendChild(readToggle);
   bookName.textContent = `Book: ${myLibrary[myLibrary.length - 1].title}`;
   authorName.textContent = `Author: ${myLibrary[myLibrary.length - 1].author}`;
   numberOfPages.textContent = `Number of Pages: ${
