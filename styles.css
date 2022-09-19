@@ -60,6 +60,9 @@ li {
   transition: 0.7s;
   padding: 1em;
   margin: 0 auto;
+  box-shadow: -1px 10px 63px -10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 10px 63px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 10px 63px -10px rgba(0, 0, 0, 0.75);
 }
 .trash_icon_container {
   display: flex;
