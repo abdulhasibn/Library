@@ -31,6 +31,11 @@ function displayBook() {
     cardDiv.appendChild(authorName);
     cardDiv.appendChild(numberOfPages);
     cardDiv.appendChild(readStatus);
+    const trash = document.createElement("div");
+    trash.className = "trash_icon_container";
+    const trashImg = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ9JREFUSEvtlckRwjAQBHsiIQQgE0KADAiBTCAEMsFkAJEMxYNDlK3domy/pPfW9Kp1rJh4aeJ8QoDtLXAcaGQn6VRrsgqwvQIuwS7XkrqhmgJg22Mok/TOnRcwRve/Gb1n8K+qbzUvUAMUypui8BY3RU3Rx8Acf9ENWITSy4KrpOeAKl93X4jtDXAAlknIHdhLOqcAydBUWTj0UymVogf/MVEZ+Rf2bAAAAABJRU5ErkJggg==" class="trash_icon"/>`;
+    trash.innerHTML = trashImg;
+    cardDiv.appendChild(trash);
   });
 }
 const addNew = document.querySelector("#add_btn");

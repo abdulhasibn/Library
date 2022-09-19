@@ -59,6 +59,20 @@ li {
   transition: 0.7s;
   padding: 1em;
 }
+.trash_icon_container {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+.trash_icon {
+  cursor: pointer;
+}
+.trash_icon:hover {
+  scale: 1.1;
+}
+.trash_icon:active {
+  scale: 1;
+}
 .read_container {
   display: flex;
   flex-direction: column;
