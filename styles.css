@@ -64,7 +64,7 @@ li {
   -webkit-box-shadow: -1px 10px 63px -10px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 10px 63px -10px rgba(0, 0, 0, 0.75);
 }
-.read_container {
+.read_status_container {
   display: flex;
   gap: 1em;
 }
