@@ -9,7 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(90deg, rgb(43, 42, 42), rgb(136, 91, 91));
+  background: linear-gradient(90deg, rgb(43, 42, 42), #885b5b);
   font-family: "Poppins", sans-serif;
 }
 li {

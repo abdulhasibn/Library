@@ -33,9 +33,15 @@ function displayBook() {
     cardDiv.appendChild(readStatus);
     const trash = document.createElement("div");
     trash.className = "trash_icon_container";
-    const trashImg = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ9JREFUSEvtlckRwjAQBHsiIQQgE0KADAiBTCAEMsFkAJEMxYNDlK3domy/pPfW9Kp1rJh4aeJ8QoDtLXAcaGQn6VRrsgqwvQIuwS7XkrqhmgJg22Mok/TOnRcwRve/Gb1n8K+qbzUvUAMUypui8BY3RU3Rx8Acf9ENWITSy4KrpOeAKl93X4jtDXAAlknIHdhLOqcAydBUWTj0UymVogf/MVEZ+Rf2bAAAAABJRU5ErkJggg==" class="trash_icon"/>`;
+    const trashImg = `<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALVJREFUSEtjZKAxYKSx+QwELWiPikpgZGScj80h////T6xctmwBPkfitaArKsrgHyPjeXwGMP3/b1i2bNkFXGpQLOiIjv5PjSCrWLoUbi59LaCG69HNwBoH5AYVctDALBq1ACXIR4OIYCoeDaLRIEKEAM3Lovbo6AeMDAzyBAMdVcHFiqVLDYgqTTtjYgL+///fwMDAoE+MJf8ZGB4yMTIWlC9ZsoEoC4gxlFg1BCt9Yg3CpQ4AR+xbGXAlTJ4AAAAASUVORK5CYII=" alt="delete" class="trash_icon"/>`;
     trash.innerHTML = trashImg;
     cardDiv.appendChild(trash);
+    trash.setAttribute("data-index", `${myLibrary.indexOf(e)}`);
+    trash.addEventListener("click", () => {
+      console.log(trash.getAttribute("data-index"));
+      myLibrary.splice(`${trash.getAttribute("data-index")}`, 1);
+      cardDiv.remove();
+    });
   });
 }
 const addNew = document.querySelector("#add_btn");
