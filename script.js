@@ -25,16 +25,16 @@ function displayBook() {
   readStatusContainer.className = "read_status_container";
   let readStatus = document.createElement("p");
   readStatusContainer.appendChild(readStatus);
-  let readToggle = document.createElement("input");
-  readToggle.type = "checkbox";
-  readToggle.className = "read_toggle_btn";
-  readStatusContainer.appendChild(readToggle);
   bookName.textContent = `Book: ${myLibrary[myLibrary.length - 1].title}`;
   authorName.textContent = `Author: ${myLibrary[myLibrary.length - 1].author}`;
-  numberOfPages.textContent = `Number of Pages: ${
-    myLibrary[myLibrary.length - 1].pages
-  }`;
+  numberOfPages.textContent = `Pages: ${myLibrary[myLibrary.length - 1].pages}`;
   readStatus.textContent = `${myLibrary[myLibrary.length - 1].read}`;
+  readStatus.className = "read_status_card";
+  readStatus.addEventListener("click", () => {
+    readStatus.innerText === "Read"
+      ? (readStatus.innerText = "Not read")
+      : (readStatus.innerText = "Read");
+  });
   cardDiv.appendChild(bookName);
   cardDiv.appendChild(authorName);
   cardDiv.appendChild(numberOfPages);
@@ -54,6 +54,9 @@ function displayBook() {
     cardDiv.remove();
   });
 }
+
+function readToggle() {}
+
 const addNew = document.querySelector("#add_btn");
 addNew.addEventListener("click", () => {
   const modal = document.getElementById("modal");
@@ -71,4 +74,3 @@ const closeBtn = document.getElementById("x");
 closeBtn.addEventListener("click", () => {
   modal.close();
 });
-console.table(myLibrary);

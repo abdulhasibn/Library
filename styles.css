@@ -44,11 +44,10 @@ li {
   margin: 2em auto;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1em;
-  align-items: stretch;
 }
 .card {
   background-color: rgb(0, 0, 0, 0.5);
-  max-width: 300px;
+  width: 300px;
   height: 300px;
   border-radius: 20px;
   display: flex;
@@ -67,6 +66,21 @@ li {
 .read_status_container {
   display: flex;
   gap: 1em;
+}
+.read_status_card {
+  background-color: #5b886c;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: 0.4s;
+}
+.read_status_card:hover {
+  scale: 1.1;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.read_status_card:active {
+  scale: 1;
 }
 .trash_icon_container {
   display: flex;
