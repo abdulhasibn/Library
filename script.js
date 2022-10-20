@@ -12,7 +12,6 @@ function addBookToLibrary() {
   const pageNumber = document.getElementById("page_number").value;
   const read = document.getElementById("read_status").value;
   myLibrary.push(new Book(book, author, pageNumber, read));
-  book.innerText = " ";
 }
 function displayBook() {
   let booksContainer = document.getElementById("books_container");
@@ -62,6 +61,8 @@ const addNew = document.querySelector("#add_btn");
 addNew.addEventListener("click", () => {
   const modal = document.getElementById("modal");
   modal.showModal();
+  const bookName = document.getElementById("book_name");
+  bookName.innerText = " ";
 });
 
 const form = document.getElementById("my_form");
