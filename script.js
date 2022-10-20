@@ -12,6 +12,7 @@ function addBookToLibrary() {
   const pageNumber = document.getElementById("page_number").value;
   const read = document.getElementById("read_status").value;
   myLibrary.push(new Book(book, author, pageNumber, read));
+  book.innerText = "";
 }
 function displayBook() {
   let booksContainer = document.getElementById("books_container");
