@@ -61,8 +61,6 @@ const addNew = document.querySelector("#add_btn");
 addNew.addEventListener("click", () => {
   const modal = document.getElementById("modal");
   modal.showModal();
-  const bookName = document.getElementById("book_name");
-  bookName.innerText = " ";
 });
 
 const form = document.getElementById("my_form");
@@ -71,6 +69,8 @@ form.addEventListener("submit", (e) => {
   addBookToLibrary();
   displayBook();
   modal.close();
+  const bookName = document.getElementById("book_name");
+  bookName.innerText = " ";
 });
 const closeBtn = document.getElementById("x");
 closeBtn.addEventListener("click", () => {
